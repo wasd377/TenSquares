@@ -15,35 +15,30 @@ struct SideView: View {
     @State var text = "test"
     
     var body: some View {
-        if side == "master" {
+        if side == "Master" {
             HStack{
                 VStack {
                     Text("Master")
                     ForEach(vm.masterSquares, id: \.id) { square in
                         
-                        SquareView(color: square.color, id: square.id)
+                        SquareView(color: square.color, id: square.id, side: "Master")
                         
                     }
                 }
     
             }
         }
-        if side == "player" {
+        if side == "Player" {
             HStack{
                 VStack {
                     Text("Player")
                     ForEach(vm.playerSquares, id: \.self) { square in
-                                SquareView(color: square.color, id: square.id)
+                        SquareView(color: square.color, id: square.id, side: "Player")
                         }
                     
                 }
               
     
-            }
-            .onTapGesture {
-                vm.objectWillChange.send()
-                vm.playerSquares[5].color = Color(.red)
-               
             }
         }
     }
@@ -51,7 +46,7 @@ struct SideView: View {
 
 struct SideView_Previews: PreviewProvider {
     
-    static var side = "player"
+    static var side = "Player"
     
     static var previews: some View {
         SideView(side: side)

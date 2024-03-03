@@ -31,6 +31,7 @@ class ViewModel: ObservableObject {
                   Color(.black)]
     @Published var masterSquares: [Square] = []
     @Published var playerSquares: [Square] = []
+    @Published var gameResult = 0
     
     init() {
        loadSquares()
@@ -44,6 +45,17 @@ class ViewModel: ObservableObject {
         playerSquares = []
         for square in 1...10 {
             self.playerSquares.append(Square(id: playerSquares.count+1, color: Color(.white)))
+        }
+    }
+    
+    func calculateResult() {
+        
+        gameResult = 0
+        
+        for result in 0...9 {
+            if masterSquares[result].color == playerSquares[result].color {
+                gameResult += 1
+            }
         }
     }
 }

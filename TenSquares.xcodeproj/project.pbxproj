@@ -18,7 +18,6 @@
 		825E4FDA2B9093270009F499 /* VIewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825E4FD92B9093270009F499 /* VIewModel.swift */; };
 		825E4FDE2B9332D20009F499 /* SideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825E4FDD2B9332D20009F499 /* SideView.swift */; };
 		825E4FE02B933C260009F499 /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825E4FDF2B933C260009F499 /* ResultView.swift */; };
-		825E4FE22B9346330009F499 /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825E4FE12B9346330009F499 /* test.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,7 +52,6 @@
 		825E4FD92B9093270009F499 /* VIewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIewModel.swift; sourceTree = "<group>"; };
 		825E4FDD2B9332D20009F499 /* SideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideView.swift; sourceTree = "<group>"; };
 		825E4FDF2B933C260009F499 /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
-		825E4FE12B9346330009F499 /* test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,7 +106,6 @@
 				825E4FD92B9093270009F499 /* VIewModel.swift */,
 				825E4FAF2B9091880009F499 /* ContentView.swift */,
 				825E4FDD2B9332D20009F499 /* SideView.swift */,
-				825E4FE12B9346330009F499 /* test.swift */,
 				825E4FD72B90920A0009F499 /* SquareView.swift */,
 				825E4FDF2B933C260009F499 /* ResultView.swift */,
 				825E4FB12B90918C0009F499 /* Assets.xcassets */,
@@ -278,7 +275,6 @@
 				825E4FDA2B9093270009F499 /* VIewModel.swift in Sources */,
 				825E4FAE2B9091880009F499 /* TenSquaresApp.swift in Sources */,
 				825E4FE02B933C260009F499 /* ResultView.swift in Sources */,
-				825E4FE22B9346330009F499 /* test.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,7 +442,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -480,7 +476,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

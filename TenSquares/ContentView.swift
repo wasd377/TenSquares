@@ -12,15 +12,6 @@ struct ContentView: View {
     @EnvironmentObject var vm : ViewModel
     
     @State var gameState = "generating"
-    @State var result = 0
-    
-    func calculateResult() {
-        for result in 0...9 {
-            if vm.masterSquares[result].color == vm.playerSquares[result].color {
-                self.result += 1
-            }
-        }
-    }
     
     var body: some View {
         
@@ -31,31 +22,32 @@ struct ContentView: View {
                 .multilineTextAlignment(.center)
             if gameState == "generating" {
                 Spacer()
-                SideView(side: "master")
+                SideView(side: "Master")
                 Spacer()
                 Button("Ready!") {
                     gameState = "playing"
                 }
             } else if gameState == "playing" {
                 Spacer()
-                SideView(side: "player")
+                SideView(side: "Player")
                 Spacer()
                 Button("Done!") {
                     gameState = "checking"
-                    calculateResult()
+                    vm.calculateResult()
                 }
                 
             } else if gameState == "checking" {
                 Spacer()
                 HStack{
                     Spacer()
-                    SideView(side: "master")
+                    SideView(side: "Master")
                     Spacer()
-                    SideView(side: "player")
+                    SideView(side: "Player")
                     Spacer()
                
                 }
-                Text("Result: \(result) / 10")
+                Spacer()
+                Text("Result: \(vm.gameResult) / 10")
                 Spacer()
                 Button("New game!") {
                     vm.loadSquares()
@@ -64,6 +56,7 @@ struct ContentView: View {
                     
             }
         }
+   
     }
 }
 
