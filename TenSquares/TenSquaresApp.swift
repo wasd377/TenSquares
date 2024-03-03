@@ -12,6 +12,7 @@ struct TenSquaresApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(ViewModel())
         }
     }
 }
